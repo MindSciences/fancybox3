@@ -2238,7 +2238,7 @@
             this.isHiddenControls = false;
 
             $container
-                .addClass('fancybox-show-controls')
+                .toggleClass('fancybox-show-controls', !!opts.controls)
                 .toggleClass('fancybox-show-infobar', !!opts.infobar && self.group.length > 1)
                 .toggleClass('fancybox-show-buttons', !!opts.buttons )
                 .toggleClass('fancybox-is-modal',     !!opts.modal );
